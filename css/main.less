@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Pop';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@wh: #fff;
+
+
+body {
+    background-color: #000;
+    font-family: 'Pop', sans-serif;
+    margin: 0;
+
+    .header {
+        color: #fff;
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+
+            .logo {
+                font-size: 25px;
+            }
+
+            a {
+                text-decoration: none;
+                color: @wh;
+            }
+
+            .header-nav {
+                display: flex;
+                align-items: center;
+
+                .header-nav-item {
+                    margin: 0 15px;
+                    font-size: 15px;
+                }
+
+                .header-button {
+                    background-color: @wh;
+                    padding: 10px 20px;
+                    color: #000;
+                    border-radius: 14px;
+                    letter-spacing: 0.4px;
+                }
+            }
+        }
+    }
+
+    .wh-button {
+        background-color: @wh;
+        padding: 10px 10px 10px 42px;
+        color: #000;
+        border-radius: 14px;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: " ";
+            width: 32px;
+            height: 32px;
+            background: #000;
+            border-radius: 50px;
+            position: absolute;
+            left: 4px;
+            top: 5px;
+        }
+
+        .circle {
+            background: #000;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .main-section {
+        background-image: url(../image/main-bg.png);
+        background-size: cover;
+
+        .main-section-container {
+            padding-top: 461px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 70px;
+            position: relative;
+
+            .main-info {
+                max-width: 600px;
+                margin: 0 auto;
+                text-align: center;
+
+                .name-of-studio {
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #C0C0C0;
+                }
+
+                .studio-info {
+                    font-size: 54px;
+                    line-height: 59px;
+                    color: @wh;
+                    margin: 5px 0 18px 0;
+                }
+
+                .more-studio-info {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #C0C0C0;
+                }
+            }
+
+            .icons {
+                display: flex;
+                color: @wh;
+                position: absolute;
+                bottom: 40px;
+                right: -140px;
+
+                .char {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio-section {
+        .portfolio-section-container {
+            max-width: 1172px;
+            margin: 0 auto;
+            padding-top: 112px;
+            padding-bottom: 100px;
+
+            .portfolio-tittle {
+                font-size: 40px;
+                line-height: 42px;
+                text-align: center;
+                color: @wh;
+
+                .portfolio-description {
+                    font-size: 23px;
+                    line-height: 30px;
+                    color: #C0C0C0;
+                    margin-top: 15px;
+                    margin-bottom: 42px;
+                }
+            }
+
+            .examples {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .product {
+                    position: relative;
+                    margin-bottom: 20px;
+
+                    .product-info {
+                        max-width: 462px;
+                        position: absolute;
+                        left: 30px;
+                        bottom: 40px;
+                        z-index: 99;
+
+                        .product-tittle {
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                            color: @wh;
+                            margin-bottom: 15px;
+                        }
+
+                        .product-description {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #C0C0C0;
+                            margin-bottom: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .icon {
+        display: flex;
+        position: absolute;
+        right: -140px;
+        top: 535px;
+
+        .chart {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            color: @wh;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .japan-section {
+        background-image: url(../image/japan.png);
+        background-size: cover;
+        height: 600px;
+
+        .japan-section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+
+            .japan-text {
+                max-width: 300px;
+                position: absolute;
+                right: 0;
+                top: 253px;
+
+                .fuji-tittle {
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: @wh;
+                }
+
+                .fuji-description {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #C0C0C0;
+                }
+            }
+        }
+    }
+
+    .tools-section {
+        background: url(../image/camera.png) no-repeat 100%;
+        max-width: 1536px;
+        margin: 0 auto;
+
+        .tools-section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+            .icon{
+                top: 490px;
+            }
+            .leftside {
+                .leftside-container {
+                    max-width: 515px;
+                    padding-bottom: 141px;
+                    .prop-text {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        color: #C0C0C0;
+                        padding-top: 173px;
+                    }
+                    .leftside-tittle {
+                        font-size: 28px;
+                        line-height: 32px;
+                        color: @wh;
+                        margin-top: 6px;
+                        margin-bottom: 15px;
+                    }
+                    .left-side-text {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: @wh;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
